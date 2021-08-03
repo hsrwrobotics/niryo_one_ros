@@ -73,9 +73,11 @@ roslaunch niryo_one_gazebo gazebo_niryo_one.launch
 ### Issues/Fixes
 - loading a urdf model into gazebo is relatively easy, problem is getting it to listen to the right topics and laoding the right controllers
   - the `urdf` model from **Niryo Robotics** was missing the necessary `interial` tags for Gazebo
+  - the `inertial` tags in this repo have been taken from the 'gazebo_simulations' branch of **Niryo Robotics**
 - Besides this, the urdf also had issues with the naming scheme for the `transmission` tags :ambulance:
   - this was rectified using the help of **Moveit Setup Assistant**
 - the `controllers.yaml` also might have been a possible source of error  
+- The urdf file also requires `libgazebo` plugin with the right parameters
 
 
 
